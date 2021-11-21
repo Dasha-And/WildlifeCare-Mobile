@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#262621"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/elephant"
+            android:layout_marginTop="100sp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mohave_bold"
+            android:paddingTop="10sp"
+            android:paddingBottom="50sp"
+            android:text="Welcome to WildlifeCare"
+            android:textAlignment="center"
+            android:textColor="#FFEB3B"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:fontFamily="@font/mohave_regular"
+            android:letterSpacing="0.04"
+            android:paddingBottom="20sp"
+            android:text="Enter your workspace url, which you recieved on email:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/workspaceUrl"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/fields"
+            android:ems="10"
+            android:fontFamily="@font/mohave_regular"
+            android:hint="Wokrspace URL"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:paddingLeft="10sp"
+            android:textAlignment="textStart"
+            android:textColor="@color/dark_grey"
+            android:textColorHighlight="#D3D3D3"
+            android:textColorHint="#818181"
+            android:textColorLink="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/goToWorkSpaceButton"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/buttons"
+            android:fontFamily="@font/mohave_bold"
+            android:text="Confirm"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
