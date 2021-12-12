@@ -18,7 +18,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/elephant"
+            app:srcCompat="@drawable/elephant_starter_page"
             android:layout_marginTop="100sp"/>
 
         <TextView
